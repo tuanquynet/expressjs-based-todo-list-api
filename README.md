@@ -1,2 +1,2 @@
-# expressjs-based-todo-list-api
-Demo code for nodejs-basic-course
+# TodoList
+This is a simple API app built with expressjs to crud todo list
