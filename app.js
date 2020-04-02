@@ -16,7 +16,10 @@ app.use(cors());
 
 // connect mongodb
 //const MONGO_URI = 'mongodb://localhost:27017/todo';
-const MONGO_URI = 'mongodb+srv://devops:share123@cluster0-5kuqc.mongodb.net/todo?retryWrites=true';
+// const MONGO_URI = 'mongodb+srv://devops:share123@cluster0-5kuqc.mongodb.net/todo?retryWrites=true';
+const {
+    MONGO_URI = 'mongodb://localhost:27017/todo'
+} = process.env;
 
 mongoose.connect(MONGO_URI, { useNewUrlParser: true }, () => {
     console.log('Connect to MongoDB @', MONGO_URI, ' successfully.');
